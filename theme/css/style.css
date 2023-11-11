@@ -1288,7 +1288,19 @@ overlay search
 }
 .sidebar-widget.subscribe {
   border: 2px solid #000;
-  padding: 30px;
+  margin-left: 550px;
+  margin-right: 550px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.sidebar-widget.kosong {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sidebar-widget.category li {
   padding: 10px 0px;
