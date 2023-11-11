@@ -1,0 +1,33 @@
+@@include('header.htm')
+
+@@include('blocks/menu-2.htm')
+
+<section class="section-padding pt-4">
+	<div class="container">
+		<div class="columns is-desktop">
+			<div class="column is-8-desktop">
+				@@include('blocks/post-style-one.htm')
+
+				<div class="column is-12">
+					<div class="pagination mt-5">
+						<ul class="list-inline">
+							<li class="list-inline-item"><a href="#" class="active">1</a></li>
+							<li class="list-inline-item"><a href="#">2</a></li>
+							<li class="list-inline-item"><a href="#">3</a></li>
+							<li class="list-inline-item"><a href="#" class="prev-posts"><i class="ti-arrow-right"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="column is-4-desktop">
+				<div class="sidebar sidebar-right">
+					@@include('blocks/post-sidebar.htm')
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+@@include('blocks/footer-3.htm')
+
+@@include('footer.htm')
