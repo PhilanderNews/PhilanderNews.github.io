@@ -1,5 +1,6 @@
-export function postNoToken(target_url,datajson,responseFunction){
+export function postWithToken(target_url,tokenkey,tokenvalue,datajson,responseFunction){
     var myHeaders = new Headers();
+    myHeaders.append(tokenkey, tokenvalue);
     myHeaders.append("Content-Type", "application/json");
 
     var raw = JSON.stringify(datajson);
@@ -17,9 +18,8 @@ export function postNoToken(target_url,datajson,responseFunction){
     .catch(error => console.log('error', error));
 }
 
-export function postWithToken(target_url,tokenkey,tokenvalue,datajson,responseFunction){
+export function postBiasa(target_url,datajson,responseFunction){
     var myHeaders = new Headers();
-    myHeaders.append(tokenkey, tokenvalue);
     myHeaders.append("Content-Type", "application/json");
 
     var raw = JSON.stringify(datajson);
