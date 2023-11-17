@@ -7,11 +7,7 @@ export default function RegistrasiUser(){
     let email = getValue("email");
     let username = getValue("username");
     let password = getValue("password");
-    if (!name) {
-        alert("Nama perlu diisi");
-        return; // Stop execution if the fields are not filled
-    }
-    if (!(email.endsWith("@gmail.com") || email.endsWith("@std.ulbi.ac.id") || email.endsWith("@ulbi.ac.id"))) {
+    if (email && !(email.endsWith("@gmail.com") || email.endsWith("@std.ulbi.ac.id") || email.endsWith("@ulbi.ac.id"))) {
         alert("Format email tidak benar");
         return; // Stop execution if the email format is not valid
     }
