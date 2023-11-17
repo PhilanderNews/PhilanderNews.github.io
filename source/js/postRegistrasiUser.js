@@ -13,7 +13,6 @@ export default function RegistrasiUser(){
 }
 
 function responseData(result) {
-    setInner("pesan", result.message);
     if (result.message == "Username telah dipakai") {
         alert("Username telah dipakai");
     }

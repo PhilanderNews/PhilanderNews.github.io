@@ -1,5 +1,5 @@
 import { postWithToken } from "./api.js";
-import { setInner,getValue } from "./element.js";
+import { getValue } from "./element.js";
 import { setCookieWithExpireHour } from "./cookie.js";
 
 export default function LoginUser(){
@@ -16,7 +16,6 @@ export default function LoginUser(){
 }
 
 function responseData(result) {
-    setInner("pesan", result.message);
     setCookieWithExpireHour("token", result.token, 2);
     setCookieWithExpireHour("username", getValue("username"), 2);
     if (result.message == "Password Salah") {
