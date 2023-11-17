@@ -6,6 +6,16 @@ export default function LoginUser(){
     let target_url = "https://asia-southeast2-befous.cloudfunctions.net/PhilanderNews-LoginUser";
     let tokenkey = "token";
     let tokenvalue = "688735114a6b7df3e77edd304c4e48af34b8fb8de5fe73f9f0e4a90f5db7b49e";
+    let username = getValue("username");
+    let password = getValue("password");
+    if (!username) {
+        alert("Username perlu diisi");
+        return; // Stop execution if the fields are not filled
+    }
+    if (!password) {
+        alert("Password perlu diisi");
+        return; // Stop execution if the fields are not filled
+    }
     let datainjson = {
         "username": getValue("username"),
         "password": getValue("password")
