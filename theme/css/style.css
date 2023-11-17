@@ -432,8 +432,17 @@ blockquote {
 .navigation .navbar-link::after {
   display: none !important;
 }
+.navigation .navbar-logout::after {
+  display: none !important;
+}
 .navigation .navbar-item.has-dropdown:focus .navbar-link,
 .navigation .navbar-item.has-dropdown:hover .navbar-link {
+  background-color: transparent !important;
+  outline: 0;
+  color: #ce8460;
+}
+.navigation .navbar-item.has-dropdown:focus .navbar-logout,
+.navigation .navbar-item.has-dropdown:hover .navbar-logout {
   background-color: transparent !important;
   outline: 0;
   color: #ce8460;
@@ -441,6 +450,9 @@ blockquote {
 .navigation .navbar-link:focus,
 .navigation .navbar-link:focus-within,
 .navigation .navbar-link:hover,
+.navigation .navbar-logout:focus,
+.navigation .navbar-logout:focus-within,
+.navigation .navbar-logout:hover,
 .navigation a.navbar-item.is-active,
 .navigation a.navbar-item:focus,
 .navigation a.navbar-item:focus-within,
@@ -452,6 +464,12 @@ blockquote {
   padding-right: 1.1rem;
 }
 .navigation .navbar-link {
+  padding: 0.75rem 1.1rem;
+}
+.navigation .navbar-logout:not(.is-arrowless) {
+  padding-right: 1.1rem;
+}
+.navigation .navbar-logout {
   padding: 0.75rem 1.1rem;
 }
 .navigation .navbar-dropdown {
@@ -550,6 +568,11 @@ blockquote {
   color: #fff;
   font-weight: 400;
   font-size: 14px;
+}
+.navigation-dark .navbar-logout {
+  color: red;
+  font-weight: 400;
+  font-size: 18px;
 }
 .navigation-dark .header-socials-2 a {
   color: rgba(255, 255, 255, 0.7);
