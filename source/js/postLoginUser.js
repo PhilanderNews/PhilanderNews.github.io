@@ -25,12 +25,19 @@ export default function LoginUser(){
 }
 
 function responseData(result) {
-    setCookieWithExpireHour("token", result.token, 2);
-    setCookieWithExpireHour("username", getValue("username"), 2);
-    if (result.message == "Password Salah") {
+    if (result.token == "Password Salah") {
         alert("Password Salah");
     }
-    if (result.message == "Selamat Datang") {
-        window.location.href = "../beranda";
+    if (result.data.role == "user") {
+        setCookieWithExpireHour("token", result.token, 2);
+        setCookieWithExpireHour("name", result.data.name, 2);
+        setCookieWithExpireHour("role", result.data.role, 2);
+        window.location.href = "../user/beranda";
+    }
+    if (result.data.role == "admin") {
+        setCookieWithExpireHour("token", result.token, 2);
+        setCookieWithExpireHour("name", result.data.name, 2);
+        setCookieWithExpireHour("role", result.data.role, 2);
+        window.location.href = "../admin/beranda";
     }
 }
