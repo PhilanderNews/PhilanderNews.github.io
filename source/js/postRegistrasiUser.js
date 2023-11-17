@@ -2,7 +2,7 @@ import { postBiasa } from "./api.js";
 import { getValue } from "./element.js";
 
 export default function RegistrasiUser(){
-    let target_url = "https://asia-southeast2-befous.cloudfunctions.net/PhilanderNews-RegistrasiUsers";
+    let target_url = "https://asia-southeast2-befous.cloudfunctions.net/PhilanderNews-RegistrasiUser";
     let name = getValue("name");
     let email = getValue("email");
     let username = getValue("username");
