@@ -1,48 +1,37 @@
 <!DOCTYPE html>
-
-<!--
- // WEBSITE: https://themefisher.com
- // TWITTER: https://twitter.com/themefisher
- // FACEBOOK: https://www.facebook.com/themefisher
- // GITHUB: https://github.com/themefisher/
--->
-
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!--Favicon-->
-    <link rel="shortcut icon" href="./source/images/favicon.ico" type="image/x-icon">
-    
-    <!-- THEME CSS
-	================================================== -->
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="./source/plugins/bulma/bulma.min.css">
-    <!-- Themify -->
-    <link rel="stylesheet" href="./source/plugins/themify/css/themify-icons.css">
-    <link rel="stylesheet" href="./source/plugins/slick-carousel/slick-theme.css">
-    <link rel="stylesheet" href="./source/plugins/slick-carousel/slick.css">
-    <!-- Slick Carousel -->
-    <link rel="stylesheet" href="./source/plugins/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="./source/plugins/owl-carousel/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./source/plugins/magnific-popup/magnific-popup.css">
-    <!-- manin stylesheet -->
-    <link rel="stylesheet" href="./source/css/style.css">
+   <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+   <!-- css start -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+   <link rel="stylesheet" href="./assets/css/themify-icons.css">
+   <link rel="stylesheet" href="./assets/css/slick.css">
+   <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+   <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="./assets/css/magnific-popup.css">
+   <link rel="stylesheet" href="./assets/css/style.css">
+   <!-- css end -->
+
+   <title>Home</title>
 </head>
 <body onload="HapusCookie()">
 
+<!-- header start -->
 <header class="header-top bg-dark">
    <div class="container">
       <div class="columns is-gapless">
          <div class="column is-12">
+
+            <!-- navbar start -->
             <nav class="navbar navigation navigation-dark">
                <div class="navbar-brand">
                   <a class="navbar-item" href="index-5.html">
-                     <img src="./source/images/logo-w.png" alt="">
+                     <img src="./assets/images/logo-w.png" alt="">
                   </a>
             
                   <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="menu1">
@@ -72,104 +61,128 @@
                   </div>
                </div>
             </nav>
+            <!-- navbar end -->
+
          </div>
       </div>
    </div>
 </header>
+<!-- header end -->
 
-<!--search overlay start-->
-<div class="search-wrap">
-   <div class="overlay">
-      <form action="#" class="search-form">
-         <div class="container">
-            <div class="columns is-gapless is-mobile is-align-items-center">
-               <div class="column is-10-desktop is-9-mobile">
-                  <input type="text" class="input" placeholder="Search..." />
+<!-- main start -->
+<main>
+   
+   <!--search overlay start-->
+   <div class="search-wrap">
+      <div class="overlay">
+         <form action="#" class="search-form">
+            <div class="container">
+               <div class="columns is-gapless is-mobile is-align-items-center">
+                  <div class="column is-10-desktop is-9-mobile">
+                     <input type="text" class="input" placeholder="Search..." />
+                  </div>
+                  <div class="column is-2-desktop is-3-mobile has-text-right">
+                     <div class="search_toggle toggle-wrap is-inline-block">
+                        <i class="ti-close text-white"></i>
+                     </div>
+                  </div>
                </div>
-               <div class="column is-2-desktop is-3-mobile has-text-right">
-                  <div class="search_toggle toggle-wrap is-inline-block">
-                     <i class="ti-close text-white"></i>
+            </div>
+         </form>
+      </div>
+   </div>
+   <!--search overlay end-->
+
+   <!-- main content start -->
+   <section class="pt-5 padding-bottom">
+      <div class="container">
+         <div class="columns">
+            <div class="column is-12">
+   
+               <!-- main photo start -->
+               <div class="columns">
+                  <div class="column is-12">
+                     <img src="./assets/images/about.jpg" alt="" class=" w-100">
+                  </div>
+               </div>
+               <!-- main photo end -->
+   
+               <div class="columns is-justify-content-center mt-6">
+                  <div class="column is-12">
+   
+                     <!-- main content 1 start -->
+                     <div class="columns is-multiline">
+                        <div class="column is-4-desktop">
+                           <h5 class="is-uppercase letter-spacing mb-5">Who are us</h5>
+                           <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec
+                              tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat
+                           </p>
+                        </div>
+   
+                        <div class="column is-4-desktop">
+                           <h5 class="is-uppercase letter-spacing mb-5">Our vission</h5>
+                           <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis biben. Nam nec tellus a odio
+                              tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</p>
+                        </div>
+   
+                        <div class="column is-4-desktop">
+                           <h5 class="is-uppercase letter-spacing mb-5">Follow Us :</h5>
+                           <div class="follow-socials">
+                              <a href="#" class="fb"><i class="ti-facebook"></i></a>
+                              <a href="#" class="twt"><i class="ti-twitter"></i></a>
+                              <a href="#" class="inst"><i class="ti-instagram"></i></a>
+                              <a href="#" class="youtube"><i class="ti-youtube"></i></a>
+                              <a href="#" class="pint"><i class="ti-pinterest"></i></a>
+                           </div>
+                        </div>
+   
+                     </div>
+                     <!-- main content 1 end -->
+   
+                     <!-- main content 2 start -->
+                     <h3 class="mb-3 mt-6">I have travel 10+ more countries in this year.</h3>
+                     <p class="mb-6">It was as much as she could do, lying down on one side, to look through into the
+                        garden with one eye; but to get through was more hopeless than ever: she sat down and began to cry again.
+                     </p>
+                     
+                     <div class="columns is-multiline">
+                        <div class="column is-3-desktop is-6-tablet">
+                           <div class="about-widget">
+                              <img src="./assets/images/news/news-1.jpg" alt="" class="">
+                              <h4 class="mt-4">Hill ward</h4>
+                           </div>
+                        </div>
+                        <div class="column is-3-desktop is-6-tablet">
+                           <div class="about-widget">
+                              <img src="./assets/images/news/news-2.jpg" alt="" class="">
+                              <h4 class="mt-4">Awesome ride</h4>
+                           </div>
+                        </div>
+                        <div class="column is-3-desktop is-6-tablet">
+                           <div class="about-widget">
+                              <img src="./assets/images/news/news-3.jpg" alt="" class="">
+                              <h4 class="mt-4">New York</h4>
+                           </div>
+                        </div>
+                        <div class="column is-3-desktop is-6-tablet">
+                           <div class="about-widget">
+                              <img src="./assets/images/news/news-4.jpg" alt="" class="">
+                              <h4 class="mt-4">Rising Sea</h4>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- main content 2 end -->
+   
                   </div>
                </div>
             </div>
          </div>
-      </form>
-   </div>
-</div>
-<!--search overlay end-->
+      </div>
+   </section>
+   <!-- main content end -->
 
-<section class="pt-5 padding-bottom">
-	<div class="container">
-		<div class="columns">
-			<div class="column is-12">
-				<div class="columns">
-	<div class="column is-12">
-		<img src="./source/images/about.jpg" alt="" class=" w-100">
-	</div>
-</div>
-
-<div class="columns is-justify-content-center mt-6">
-	<div class="column is-12">
-		<div class="columns is-multiline">
-			<div class="column is-4-desktop">
-				<h5 class="is-uppercase letter-spacing mb-5">Who are us</h5>
-				<p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec
-					tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat</p>
-
-			</div>
-			<div class="column is-4-desktop">
-				<h5 class="is-uppercase letter-spacing mb-5">Our vission</h5>
-				<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis biben. Nam nec tellus a odio
-					tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</p>
-			</div>
-			<div class="column is-4-desktop">
-				<h5 class="is-uppercase letter-spacing mb-5">Follow Us :</h5>
-				<div class="follow-socials">
-					<a href="#" class="fb"><i class="ti-facebook"></i></a>
-					<a href="#" class="twt"><i class="ti-twitter"></i></a>
-					<a href="#" class="inst"><i class="ti-instagram"></i></a>
-					<a href="#" class="youtube"><i class="ti-youtube"></i></a>
-					<a href="#" class="pint"><i class="ti-pinterest"></i></a>
-				</div>
-			</div>
-		</div>
-
-		<h3 class="mb-3 mt-6">I have travel 10+ more countries in this year.</h3>
-		<p class="mb-6">It was as much as she could do, lying down on one side, to look through into the
-			garden with one eye; but to get through was more hopeless than ever: she sat down and began to cry again.</p>
-
-		<div class="columns is-multiline">
-			<div class="column is-3-desktop is-6-tablet">
-				<div class="about-widget">
-					<img src="./source/images/news/news-1.jpg" alt="" class="">
-					<h4 class="mt-4">Hill ward</h4>
-				</div>
-			</div>
-			<div class="column is-3-desktop is-6-tablet">
-				<div class="about-widget">
-					<img src="./source/images/news/news-2.jpg" alt="" class="">
-					<h4 class="mt-4">Awesome ride</h4>
-				</div>
-			</div>
-			<div class="column is-3-desktop is-6-tablet">
-				<div class="about-widget">
-					<img src="./source/images/news/news-3.jpg" alt="" class="">
-					<h4 class="mt-4">New York</h4>
-				</div>
-			</div>
-			<div class="column is-3-desktop is-6-tablet">
-				<div class="about-widget">
-					<img src="./source/images/news/news-4.jpg" alt="" class="">
-					<h4 class="mt-4">Rising Sea</h4>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-			</div>
-		</div>
-	</div>
-</section>
+</main>
+<!-- main end -->
 
 <!--footer start-->
 <footer class="footer-section mt-0 bg-grey">
@@ -191,25 +204,23 @@
             </div>
        
             <div class="column is-12 has-text-centered">
-               <p class="copyright">© Copyright 2019 - Philander News. All Rights Reserved.</p>
+               <p class="copyright">© Copyright 2023 - Philander News. All Rights Reserved.</p>
             </div>
         </div>
     </div>
 </footer>
 <!--footer end-->
 
-<!-- THEME JAVASCRIPT FILES
-================================================== -->
-<!-- initialize jQuery Library -->
-<script type="module" src="./source/plugins/jquery/jquery.js"></script>
-<!-- Owl caeousel -->
-<script type="module" src="./source/plugins/owl-carousel/owl.carousel.min.js"></script>
-<script type="module" src="./source/plugins/slick-carousel/slick.min.js"></script>
-<script type="module" src="./source/plugins/magnific-popup/magnific-popup.js"></script>
-<!-- main js -->
-<script type="module" src="./source/js/custom.js"></script>
-<script type="module" src="./source/js/post.js"></script>
-
+<!-- script start -->
+<!-- template -->
+<script src="./assets/js/template/jquery.js"></script>
+<script src="./assets/js/template/owl.carousel.min.js"></script>
+<script src="./assets/js/template/slick.min.js"></script>
+<script src="./assets/js/template/magnific-popup.js"></script>
+<script src="./assets/js/template/custom.js"></script>
+<!-- buatan sendiri -->
+<script type="module" src="./assets/js/main.js"></script>
+<!-- script end -->
 
 </body>
 </html>
