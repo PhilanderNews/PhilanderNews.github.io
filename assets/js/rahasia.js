@@ -1,0 +1,6 @@
+export let APIRegistrasi = "https://asia-southeast2-befous.cloudfunctions.net/PhilanderNews-RegistrasiUser";
+export let APILogin = "https://asia-southeast2-befous.cloudfunctions.net/PhilanderNews-LoginUser";
+export let APIAmbilDataBerita = "https://asia-southeast2-befous.cloudfunctions.net/PhilanderNews-AmbilDataBerita-Test";
+export let APITambahBerita = "https://asia-southeast2-befous.cloudfunctions.net/PhilanderNews-TambahBerita-Test";
+export let userrahasia = "v4.public.eyJleHAiOiIyMDIzLTExLTE4VDEyOjA3OjQ2KzA3OjAwIiwiaWF0IjoiMjAyMy0xMS0xOFQxMDowNzo0NiswNzowMCIsImlkIjoidXNlciIsIm5iZiI6IjIwMjMtMTEtMThUMTA6MDc6NDYrMDc6MDAiffonhNfPF1D4TedPLISlN4_TnUPpvNE6w7V0n_sIHDYRyJn8WeVV_B0mFUlP-XczwnN4n8o-oIpLDach2JzGhAY";
+export let adminrahasia = "v4.public.eyJleHAiOiIyMDIzLTExLTE4VDEyOjA4OjA2KzA3OjAwIiwiaWF0IjoiMjAyMy0xMS0xOFQxMDowODowNiswNzowMCIsImlkIjoiYWRtaW4iLCJuYmYiOiIyMDIzLTExLTE4VDEwOjA4OjA2KzA3OjAwIn3z6oUVn4h3BPLv3bqoRMFPjJSMMJ12UH_6S6QEPDKO7SclCQb_ORQikuCmwKh1DQ6ue8yLsKE5mFX77wmn7Q0O"
