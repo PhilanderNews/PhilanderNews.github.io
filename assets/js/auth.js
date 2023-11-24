@@ -1,4 +1,4 @@
-import { getCookie} from "./cookie.js";
+import { getCookie,deleteCookie } from "./cookie.js";
 import { APIAuthorization } from "./rahasia.js"
 
 // ----------Kodingan ini menyimpan data ke dalam sessionStorage(tidak aman tapi cepat)
@@ -115,21 +115,27 @@ export default function Authorization() {
             // Additional logic based on the role and elements
             if (adminAuthorizationElement && role.admin === false) {
                 console.error('Error:', data.message);
+                alert("Anda tidak terdaftar sebagai admin");
+                deleteCookie();
                 window.location.href = "../../login";
             }
             if (authorAuthorizationElement && role.author === false) {
                 console.error('Error:', data.message);
+                alert("Anda tidak terdaftar sebagai author");
+                deleteCookie();
                 window.location.href = "../../login";
             }
             if (userAuthorizationElement && role.user === false) {
                 console.error('Error:', data.message);
                 alert("Akun anda tidak aktif");
+                deleteCookie();
                 window.location.href = "../../login";
             }
         } else if (data.status === false) {
             // No token header or no decode result
             console.error('Error:', data.message);
             alert("Ada blom login");
+            deleteCookie();
             window.location.href = "../../login";
         }
     }
