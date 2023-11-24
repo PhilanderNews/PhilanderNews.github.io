@@ -25,8 +25,7 @@ export default function RegistrasiUser(){
         "name": name,
         "email": email,
         "username": username,
-        "password": password,
-        "role": "user"
+        "password": password
     }
     loadingIndicator.style.display = "block";
     
