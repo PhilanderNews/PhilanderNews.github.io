@@ -1,9 +1,12 @@
 import { deleteCookie } from "./cookie.js";
 
 export default function Logout() {
+    // Hapus cookie
     deleteCookie();
-    sessionStorage.clear("tokenuser")
-    sessionStorage.clear("tokenadmin")
-    sessionStorage.clear("name")
+
+    // Hapus data dari sessionStorage
+    sessionStorage.removeItem('cachedAuthorizationData');
+
+    // Alihkan ke halaman login
     window.location.href = "../../login";
 }
