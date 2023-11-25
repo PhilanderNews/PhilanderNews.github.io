@@ -6,6 +6,7 @@ export default function Logout() {
 
     // Hapus data dari sessionStorage
     sessionStorage.removeItem('cachedAuthorizationData');
+    sessionStorage.removeItem('cachedNewsData');
 
     // Alihkan ke halaman login
     window.location.href = "../../login";
