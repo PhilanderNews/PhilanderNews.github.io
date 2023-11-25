@@ -117,24 +117,21 @@ export default function Authorization() {
                 console.error('Error:', data.message);
                 alert("Anda tidak terdaftar sebagai admin");
                 deleteCookie();
-                sessionStorage.removeItem('cachedAuthorizationData');
-                sessionStorage.removeItem('cachedNewsData');
+                sessionStorage.clear();
                 window.location.href = "../../login";
             }
             if (authorAuthorizationElement && role.author === false) {
                 console.error('Error:', data.message);
                 alert("Anda tidak terdaftar sebagai author");
                 deleteCookie();
-                sessionStorage.removeItem('cachedAuthorizationData');
-                sessionStorage.removeItem('cachedNewsData');
+                sessionStorage.clear();
                 window.location.href = "../../login";
             }
             if (userAuthorizationElement && role.user === false) {
                 console.error('Error:', data.message);
                 alert("Akun anda tidak aktif");
                 deleteCookie();
-                sessionStorage.removeItem('cachedAuthorizationData');
-                sessionStorage.removeItem('cachedNewsData');
+                sessionStorage.clear();
                 window.location.href = "../../login";
             }
         } else if (data.status === false) {
@@ -142,8 +139,7 @@ export default function Authorization() {
             console.error('Error:', data.message);
             alert("Ada blom login");
             deleteCookie();
-            sessionStorage.removeItem('cachedAuthorizationData');
-            sessionStorage.removeItem('cachedNewsData');
+            sessionStorage.clear();
             window.location.href = "../../login";
         }
     }
