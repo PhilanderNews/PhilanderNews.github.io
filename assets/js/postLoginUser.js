@@ -30,13 +30,15 @@ function responseData(result) {
     loadingIndicator.style.display = "none";
     if (result.message == "Password Salah") {
         alert("Password Salah");
+    } else {
+        if (result.data.role.admin == false) {
+            alert("Anda tidak terdaftar sebagai admin");
+        }
+        if (result.data.role.author == false) {
+            alert("Anda tidak terdaftar sebagai author");
+        } else {
+            setCookieWithExpireSecond("token", result.token, 1);
+            window.location.href = "../user/beranda"; 
+        }
     }
-    if (result.data.role.admin == false) {
-        alert("Anda tidak terdaftar sebagai admin");
-    }
-    if (result.data.role.author == false) {
-        alert("Anda tidak terdaftar sebagai author");
-    }
-    setCookieWithExpireSecond("token", result.token, 1);
-    window.location.href = "../user/beranda";
 }
