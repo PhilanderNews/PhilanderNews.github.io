@@ -13,7 +13,7 @@ window.Logout = Logout;
 const previewContentElement = document.getElementById('preview-content');
 const auth = document.getElementById('need-authorization');
 if (previewContentElement) {
-    getSemuaBerita(APIAmbilDataBerita);
+    getSemuaBerita();
 } else {
     console.log("Element with ID 'preview-content' not found. getSemuaBerita not executed.");
 }
