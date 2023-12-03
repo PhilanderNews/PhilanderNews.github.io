@@ -5,7 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-   <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+   <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
 
    <!-- css start -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
@@ -17,9 +17,9 @@
    <link rel="stylesheet" href="./assets/css/style.css">
    <!-- css end -->
 
-   <title>Home</title>
+   <title>Beranda</title>
 </head>
-<body onload="HapusCookie()">
+<body>
 
 <!-- header start -->
 <header class="header-top bg-dark">
@@ -27,10 +27,10 @@
       <div class="columns is-gapless">
          <div class="column is-12">
 
-            <!-- navbar start -->
+			<!-- navbar start -->
             <nav class="navbar navigation navigation-dark">
                <div class="navbar-brand">
-                  <a class="navbar-item" href="index.html">
+                  <a class="navbar-item" href="../">
                      <img src="./assets/images/logo-w.png" alt="">
                   </a>
             
@@ -43,14 +43,28 @@
             
                <div id="menu1" class="navbar-menu">
                   <div class="navbar-start mr-0">
-                     <div class="navbar-item">
-                        <a class="navbar-link" href="./login">sign in</a>
-                     </div>
+                     <div class="navbar-start mr-0">
+                        <div class="navbar-item">
+                           <a class="navbar-link" href="./">beranda</a>
+                        </div>
 
-                     <div class="navbar-item">
-                        <a class="navbar-link" href="./registrasi">sign up</a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                           <a class="navbar-link">kategori</a>
+                           <div class="navbar-dropdown">
+                              <a class="navbar-item" href="?kategori=politic">politic</a>
+                              <a class="navbar-item" href="?kategori=sport">sport</a>
+                              <a class="navbar-item" href="?kategori=economy">economy</a>
+                           </div>
+                        </div>
+
+                        <div id="login" class="navbar-item">
+                           <a class="navbar-login" href="./login/">sign in</a>
+                        </div>
+
+                        <div id="logout" class="navbar-item">
+                           <a class="navbar-logout" onclick="Logout()">logout</a>
+                        </div>
                      </div>
-                  </div>
             
                   <div class="navbar-end">
                      <div class="navbar-item">
@@ -61,7 +75,7 @@
                   </div>
                </div>
             </nav>
-            <!-- navbar end -->
+			<!-- navbar end -->
 
          </div>
       </div>
@@ -71,118 +85,106 @@
 
 <!-- main start -->
 <main>
-   
-   <!--search overlay start-->
-   <div class="search-wrap">
-      <div class="overlay">
-         <form action="#" class="search-form">
-            <div class="container">
-               <div class="columns is-gapless is-mobile is-align-items-center">
-                  <div class="column is-10-desktop is-9-mobile">
-                     <input type="text" class="input" placeholder="Search..." />
-                  </div>
-                  <div class="column is-2-desktop is-3-mobile has-text-right">
-                     <div class="search_toggle toggle-wrap is-inline-block">
-                        <i class="ti-close text-white"></i>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </form>
-      </div>
-   </div>
-   <!--search overlay end-->
+	<!-- Loading indicator -->
+	<div class="absolutecenter">
+		<div id="loadingIndicator" class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+	 </div>
 
-   <!-- main content start -->
-   <section class="pt-5 padding-bottom">
-      <div class="container">
-         <div class="columns">
-            <div class="column is-12">
-   
-               <!-- main photo start -->
-               <div class="columns">
-                  <div class="column is-12">
-                     <img src="./assets/images/about.jpg" alt="" class=" w-100">
-                  </div>
-               </div>
-               <!-- main photo end -->
-   
-               <div class="columns is-justify-content-center mt-6">
-                  <div class="column is-12">
-   
-                     <!-- main content 1 start -->
-                     <div class="columns is-multiline">
-                        <div class="column is-4-desktop">
-                           <h5 class="is-uppercase letter-spacing mb-5">Who are us</h5>
-                           <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec
-                              tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat
-                           </p>
-                        </div>
-   
-                        <div class="column is-4-desktop">
-                           <h5 class="is-uppercase letter-spacing mb-5">Our vission</h5>
-                           <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis biben. Nam nec tellus a odio
-                              tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</p>
-                        </div>
-   
-                        <div class="column is-4-desktop">
-                           <h5 class="is-uppercase letter-spacing mb-5">Follow Us :</h5>
-                           <div class="follow-socials">
-                              <a href="#" class="fb"><i class="ti-facebook"></i></a>
-                              <a href="#" class="inst"><i class="ti-instagram"></i></a>
-                              <a href="#" class="youtube"><i class="ti-youtube"></i></a>
-                           </div>
-                        </div>
-   
-                     </div>
-                     <!-- main content 1 end -->
-   
-                     <!-- main content 2 start -->
-                     <h3 class="mb-3 mt-6">I have travel 10+ more countries in this year.</h3>
-                     <p class="mb-6">It was as much as she could do, lying down on one side, to look through into the
-                        garden with one eye; but to get through was more hopeless than ever: she sat down and began to cry again.
-                     </p>
-                     
-                     <div class="columns is-multiline">
-                        <div class="column is-3-desktop is-6-tablet">
-                           <div class="about-widget">
-                              <img src="./assets/images/news/news-1.jpg" alt="" class="">
-                              <h4 class="mt-4">Hill ward</h4>
-                           </div>
-                        </div>
-                        <div class="column is-3-desktop is-6-tablet">
-                           <div class="about-widget">
-                              <img src="./assets/images/news/news-2.jpg" alt="" class="">
-                              <h4 class="mt-4">Awesome ride</h4>
-                           </div>
-                        </div>
-                        <div class="column is-3-desktop is-6-tablet">
-                           <div class="about-widget">
-                              <img src="./assets/images/news/news-3.jpg" alt="" class="">
-                              <h4 class="mt-4">New York</h4>
-                           </div>
-                        </div>
-                        <div class="column is-3-desktop is-6-tablet">
-                           <div class="about-widget">
-                              <img src="./assets/images/news/news-4.jpg" alt="" class="">
-                              <h4 class="mt-4">Rising Sea</h4>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- main content 2 end -->
-   
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
-   <!-- main content end -->
+	<section class="section-padding pt-4">
+		<div class="container">
+			<div class="columns is-desktop">
 
+				<!-- main content start -->
+				<div class="column is-8-desktop">
+					<div id="preview-content"></div>	
+	
+					<div class="column is-12">
+						<div class="pagination mt-5">
+							<ul class="list-inline">
+								<li class="list-inline-item"><a href="#" class="active">1</a></li>
+								<li class="list-inline-item"><a href="#">2</a></li>
+								<li class="list-inline-item"><a href="#">3</a></li>
+								<li class="list-inline-item"><a href="#" class="prev-posts"><i class="ti-arrow-right"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- main content end -->
+
+				<!-- side content start -->
+				<div class="column is-4-desktop">
+					<div class="sidebar sidebar-right">
+						<div class="sidebar-wrap">
+							<div class="sidebar-widget about mb-6 has-text-centered p-3">
+								<div class="about-author">
+									<img src="./assets/images/ibrohim.jpg" alt="" class="">
+								</div>
+								<h4 class="mb-0 mt-4">Ibrohim Mubarok</h4>
+								<p>I'm Ibrohim Mubarok, I develop frontend and backend in this project!</p>
+							</div>
+
+							<div class="sidebar-widget follow mb-6 has-text-centered">
+								<h4 class="has-text-centered widget-title">Follow Me</h4>
+								<div class="follow-socials">
+									<a href="https://www.instagram.com/ibrohimubarok/"><i class="ti-instagram"></i></a>
+									<a href="https://github.com/Befous/"><i class="ti-github"></i></a>
+								</div>
+							</div>
+
+							<div class="sidebar-widget about mb-6 has-text-centered p-3">
+								<div class="about-author">
+									<img src="./assets/images/akbar.jpg" alt="" class="">
+								</div>
+								<h4 class="mb-0 mt-4">Fitrah Ali Akbar Setiawan
+								</h4>
+								<p>I'm Fitrah Ali Akbar Setiawan, I develop frontend in this project!</p>
+							</div>
+
+							<div class="sidebar-widget follow mb-6 has-text-centered">
+								<h4 class="has-text-centered widget-title">Follow Me</h4>
+								<div class="follow-socials">
+									<a href="https://www.instagram.com/fitrahas_/"><i class="ti-instagram"></i></a>
+									<a href="https://github.com/KOCOKERZ/"><i class="ti-github"></i></a>
+								</div>
+							</div>
+
+							<div class="sidebar-widget category mb-6">
+								<h4 class="has-text-centered widget-title">Categories</h4>
+								<ul class="list-unstyled">
+									<li class="is-align-items-center is-flex is-justify-content-space-between">
+										<a href="#">Innovation</a>
+										<span>14</span>
+									</li>
+									<li class="is-align-items-center is-flex is-justify-content-space-between">
+										<a href="#">Software</a>
+										<span>2</span>
+									</li>
+									<li class="is-align-items-center is-flex is-justify-content-space-between">
+										<a href="#">Social</a>
+										<span>10</span>
+									</li>
+									<li class="is-align-items-center is-flex is-justify-content-space-between">
+										<a href="#">Trends</a>
+										<span>5</span>
+									</li>
+								</ul>
+							</div>
+
+							<div class="sidebar-widget sidebar-adv mb-6">
+								<a href="#"><img src="./assets/images/sidebar-banner3.png" alt="" class=" w-100"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- side content end -->
+				
+			</div>
+		</div>
+	</section>
 </main>
 <!-- main end -->
 
-<!--footer start-->
+<!-- footer start -->
 <footer class="footer-section mt-0 bg-grey">
     <div class="container">
         <div class="columns is-multiline">
@@ -204,7 +206,7 @@
         </div>
     </div>
 </footer>
-<!--footer end-->
+<!-- footer end -->
 
 <!-- script start -->
 <!-- template -->
