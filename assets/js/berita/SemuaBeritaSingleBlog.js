@@ -1,5 +1,4 @@
 import { APIAmbilDataBerita } from "../dll/rahasia.js"
-import { getCookie } from "../dll/cookie.js";
 
 const loadingIndicator = document.getElementById("loadingIndicator");
 
@@ -9,8 +8,7 @@ export default function SemuaBeritaSingleBlog() {
     loadingIndicator.style.display = "block";
 
     const myHeaders = new Headers();
-    let tokencookie = getCookie("token");
-    myHeaders.append("token", tokencookie);
+    myHeaders.append("Content-Type", "application/json");
 
     var requestOptions = {
         method: 'GET',
@@ -63,7 +61,7 @@ function displayNews(dataArray, idParam) {
                         <span class="is-uppercase font-sm letter-spacing-1">${data.waktu}</span>
                     </div>
                     <div class="post-featured-image mt-6">
-                        <img src="${data.image}" class=" w-100" alt="featured-image">
+                        <img src="${data.image}" alt="featured-image" width="500">
                     </div>
                 </div>
                 <div class="post-body">

@@ -1,5 +1,4 @@
 import { APIAmbilDataBerita } from "../dll/rahasia.js"
-import { getCookie } from "../dll/cookie.js";
 
 const loadingIndicator = document.getElementById("loadingIndicator");
 
@@ -9,8 +8,7 @@ export default function SemuaBeritaBeranda() {
     loadingIndicator.style.display = "block";
 
     const myHeaders = new Headers();
-    let tokencookie = getCookie("token");
-    myHeaders.append("token", tokencookie);
+    myHeaders.append("Content-Type", "application/json");
 
     var requestOptions = {
         method: 'GET',
