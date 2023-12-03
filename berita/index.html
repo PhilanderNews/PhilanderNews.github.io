@@ -1,11 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+
+   <!-- css start -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+   <link rel="stylesheet" href="../assets/css/themify-icons.css">
+   <link rel="stylesheet" href="../assets/css/slick.css">
+   <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+   <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+   <link rel="stylesheet" href="../assets/css/style.css">
+   <!-- css end -->
+
+   <title>Berita</title>
 </head>
 <body>
-    asd
+
+<!-- header start -->
+<header class="header-top bg-dark">
+    <div class="container">
+        <div class="columns is-gapless">
+            <div class="column is-12">
+
+                <!-- navbar start -->
+                <nav class="navbar navigation navigation-dark">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="../">
+                        <img src="../assets/images/logo-w.png" alt="">
+                    </a>
+                
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="menu1">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                
+                <div id="menu1" class="navbar-menu">
+                    <div class="navbar-start mr-0">
+                        <div class="navbar-start mr-0">
+                            <div class="navbar-item">
+                                <a class="navbar-link" href="../">beranda</a>
+                            </div>
+
+                            <div id="cms" class="navbar-item">
+                                <a class="navbar-link" href="../cms/">cms</a>
+                            </div>
+
+                            <div id="login" class="navbar-item">
+                                <a class="navbar-login" href="../login/">sign in</a>
+                            </div>
+
+                            <div id="logout" class="navbar-item">
+                                <a class="navbar-logout" onclick="Logout()">logout</a>
+                            </div>
+                        </div>
+                
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                        <div class="search ml-4">
+                            <div class="search_toggle"><i class="ti-search text-white"></i></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                </nav>
+                <!-- navbar end -->
+
+            </div>
+        </div>
+    </div>
+ </header>
+<!-- header end -->
+
+<main>
+
+   <!--search overlay start-->
+   <div class="search-wrap">
+      <div class="overlay">
+         <form action="#" class="search-form">
+            <div class="container">
+               <div class="columns is-gapless is-mobile is-align-items-center">
+                  <div class="column is-10-desktop is-9-mobile">
+                     <input type="text" class="input" placeholder="Search..." />
+                  </div>
+                  <div class="column is-2-desktop is-3-mobile has-text-right">
+                     <div class="search_toggle toggle-wrap is-inline-block">
+                        <i class="ti-close text-white"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </form>
+      </div>
+   </div>
+   <!--search overlay end-->
+
+   <!-- main berita start -->
+    <section class="single-block-wrapper section-padding">
+        <div class="container">
+            <div class="columns is-desktop">
+
+                <!-- main content start -->
+                <div class="column is-8-desktop">
+                    <div class="single-post">
+                        <div class="post-header mb-6 has-text-centered">
+                            <div class="meta-cat">
+                                <a class="post-category font-extra text-color is-uppercase font-sm letter-spacing-1" href="#">Health ,</a>
+                                <a class="post-category font-extra text-color is-uppercase font-sm letter-spacing-1" href="#">lifestyle</a>
+                            </div>
+                            <h2 class="post-title mt-2">
+                                First Look At Self-Portrait's Autumn Collection
+                            </h2>
+
+                            <div class="post-meta">
+                                <span class="is-uppercase font-sm letter-spacing-1 mr-3">by Liam</span>
+                                <span class="is-uppercase font-sm letter-spacing-1">January 17,2019</span>
+                            </div>
+                            <div class="post-featured-image mt-6">
+                                <img src="images/fashion/bg-banner.jpg" class=" w-100" alt="featured-image">
+                            </div>
+                        </div>
+                        <div class="post-body">
+                            <div class="entry-content">
+                                <p> It was a cheerful prospect. I asked Perry what he thought about it; but he only shrugged his shoulders and
+                                    continued a longwinded prayer he had been at for some time. He was wont to say that the only redeeming
+                                    feature of our captivity was the ample time it gave him for the improvisation of prayers—it was becoming an
+                                    obsession with him.</p>
+                            </div>
+
+                            <div class="tags-share-box center-box is-flex has-text-centered is-justify-content-space-between border-top border-bottom py-4">
+                                <span class="single-comment-o"><i class="fa fa-comment-o"></i>Penulis</span>
+                            </div>
+                        </div>
+                    </div>
+				
+                    <!-- penulis start -->
+                    <div class="post-author is-flex">
+                        <div class="author-img">
+                            <img alt="" src="../assets/images/user.jpg" class="avatar avatar-100 photo" height="100" width="100">	
+                        </div>
+
+                        <div class="author-content mt-6">
+                            <h4 class="mb-3"><a rel="author" class="is-capitalize">Themefisher</a></h4>
+                        </div>
+                    </div>
+                    <!-- penulis end -->
+
+                    <!-- komentar start -->
+                    <div class="comment-area py-6">
+                        <h3 class="mb-5 has-text-centered">Comments</h3>
+                        <div class="comment-area-box media mb-6">
+                            <img alt="" src="../assets/images/user.jpg" class=" is-pulled-left mr-3 mt-2" height="100" width="100">
+
+                            <div class="ml-4">
+                                <h4 class="mb-0">Micle harison </h4>
+                                <span class="date-comm font-sm is-capitalize text-color"><i class="ti-time mr-2"></i>June 7, 2019 </span>
+
+                                <div class="comment-content mt-4">
+                                    <p>Lorem ipsum dolor sit amet, usu ut perfecto postulant deterruisset, libris causae volutpat at est, ius
+                                        id modus laoreet urbanitas. Mel ei delenit dolores.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- komentar end -->
+
+                    <!-- tambah komentar start -->
+                    <form class="comment-form mb-6 gray-bg p-5" id="comment-form">
+                        <h3 class="mb-5 has-text-centered">Leave a comment</h3>
+                        <div class="columns is-multiline">
+                            <div class="column is-12">
+                                <textarea class="input mb-3" name="comment" id="comment" cols="30" rows="5" placeholder="Comment"></textarea>
+                            </div>
+                            <div class="column is-6-desktop">
+                                <input class="input" type="text" name="name" id="name" placeholder="Name:">
+                            </div>
+                            <div class="column is-6-desktop">
+                                <input class="input" type="text" name="mail" id="mail" placeholder="Email:">
+                            </div>
+                            <div class="column is-12">
+                                <input class="btn btn-primary" type="submit" name="submit-contact" id="submit_contact" value="Submit Message">
+                            </div>
+                        </div>
+                    </form>
+                    <!-- tambah komentar end -->
+
+			    </div>
+                <!-- main content end -->
+                
+                <!-- side content start -->
+                <div class="column is-4-desktop">
+                    <div class="sidebar sidebar-right">
+                        <div class="sidebar-wrap">
+                            <div class="sidebar-widget about mb-6 has-text-centered p-3">
+                                <div class="about-author">
+                                    <img src="../assets/images/ibrohim.jpg" alt="" class="">
+                                </div>
+                                <h4 class="mb-0 mt-4">Ibrohim Mubarok</h4>
+                                <p>I'm Ibrohim Mubarok, I develop frontend and backend in this project!</p>
+                            </div>
+
+                            <div class="sidebar-widget follow mb-6 has-text-centered">
+                                <h4 class="has-text-centered widget-title">Follow Me</h4>
+                                <div class="follow-socials">
+                                    <a href="https://www.instagram.com/ibrohimubarok/"><i class="ti-instagram"></i></a>
+                                    <a href="https://github.com/Befous/"><i class="ti-github"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="sidebar-widget about mb-6 has-text-centered p-3">
+                                <div class="about-author">
+                                    <img src="../assets/images/akbar.jpg" alt="" class="">
+                                </div>
+                                <h4 class="mb-0 mt-4">Fitrah Ali Akbar Setiawan
+                                </h4>
+                                <p>I'm Fitrah Ali Akbar Setiawan, I develop frontend in this project!</p>
+                            </div>
+
+                            <div class="sidebar-widget follow mb-6 has-text-centered">
+                                <h4 class="has-text-centered widget-title">Follow Me</h4>
+                                <div class="follow-socials">
+                                    <a href="https://www.instagram.com/fitrahas_/"><i class="ti-instagram"></i></a>
+                                    <a href="https://github.com/KOCOKERZ/"><i class="ti-github"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="sidebar-widget category mb-6">
+                                <h4 class="has-text-centered widget-title">Categories</h4>
+                                <ul class="list-unstyled">
+                                    <li class="is-align-items-center is-flex is-justify-content-space-between">
+                                        <a href="#">Innovation</a>
+                                        <span>14</span>
+                                    </li>
+                                    <li class="is-align-items-center is-flex is-justify-content-space-between">
+                                        <a href="#">Software</a>
+                                        <span>2</span>
+                                    </li>
+                                    <li class="is-align-items-center is-flex is-justify-content-space-between">
+                                        <a href="#">Social</a>
+                                        <span>10</span>
+                                    </li>
+                                    <li class="is-align-items-center is-flex is-justify-content-space-between">
+                                        <a href="#">Trends</a>
+                                        <span>5</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="sidebar-widget sidebar-adv mb-6">
+                                <a href="#"><img src="../assets/images/sidebar-banner3.png" alt="" class=" w-100"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- side content end -->
+
+		    </div>
+	    </div>
+    </section>
+    <!-- main berita end -->
+
+</main>
+<!-- main end -->
+
+<!--footer start-->
+<footer class="footer-section mt-0 bg-grey">
+   <div class="container">
+      <div class="columns is-multiline">
+         <div class="column is-12 has-text-centered">
+               <div class="mb-5">
+                  <h2 class="footer-logo">Philander News.</h2>
+               </div>
+               <ul class="list-inline footer-socials mb-0">
+                  <li class="list-inline-item"><a href="#"><i class="ti-facebook mr-2"></i>Facebook</a></li>
+                  <li class="list-inline-item"><a href="#"><i class="ti-linkedin mr-2"></i>Linkedin</a></li>
+                  <li class="list-inline-item"><a href="#"><i class="ti-github mr-2"></i>Github</a></li>
+                  <li class="list-inline-item"><a href="#"><i class="ti-instagram mr-2"></i>Instrgram</a></li>
+               </ul>
+         </div>
+      
+         <div class="column is-12 has-text-centered">
+            <p class="copyright">© Copyright 2023 - Philander News. All Rights Reserved.</p>
+         </div>
+      </div>
+   </div>
+</footer>
+<!--footer end-->
+
+<!-- script start -->
+<!-- template -->
+<script src="../assets/js/template/jquery.js"></script>
+<script src="../assets/js/template/owl.carousel.min.js"></script>
+<script src="../assets/js/template/slick.min.js"></script>
+<script src="../assets/js/template/magnific-popup.js"></script>
+<script src="../assets/js/template/custom.js"></script>
+<!-- buatan sendiri -->
+<script type="module" src="../assets/js/main.js"></script>
+<!-- script end -->
+
 </body>
 </html>
