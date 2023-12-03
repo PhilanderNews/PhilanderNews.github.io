@@ -1,10 +1,14 @@
+// Tools
+import Logout from "./dll/Logout.js";
+// User
 import Login from "./user/Login.js";
 import RegistrasiUser from "./user/RegistrasiUser.js";
-import Logout from "./dll/postLogout.js";
-import SemuaBeritaBeranda from "./berita/SemuaBeritaBeranda.js"
-import SemuaBeritaSingleBlog from "./berita/SemuaBeritaSingleBlog.js";
 import Authorization from "./user/Authorization.js";
-import SemuaKomentarSingleBlog from "./komentar/SemuaKomentarSingleBlog.js";
+// Berita
+import PostSatuBerita from "./berita/PostSatuBerita.js";
+import GetSemuaBeritaBeranda from "./berita/GetSemuaBeritaBeranda.js";
+// Komentar
+import GetSemuaKomentarBlog from "./komentar/GetSemuaKomentarBlog.js";
 import TambahKomentar from "./komentar/TambahKomentar.js";
 
 window.Login = Login;
@@ -12,33 +16,30 @@ window.RegistrasiUser = RegistrasiUser;
 window.Logout = Logout;
 window.TambahKomentar = TambahKomentar;
 
-// Check if the element with ID 'preview-content' exists before calling getSemuaBerita
-const previewContentElement = document.getElementById('preview-content');
+const getallElement = document.getElementById('semua-berita');
 const auth = document.getElementById('need-authorization');
-const fullberitaElement = document.getElementById('full-berita');
+const getsatuberita = document.getElementById('satu-berita');
 const komentarberitaElement = document.getElementById('komentar-berita');
-var divlogout = document.getElementById("logout");
-var divcms = document.getElementById("cms");
-var divlogin = document.getElementById("login");
+const divlogout = document.getElementById("logout");
+const divcms = document.getElementById("cms");
+const divlogin = document.getElementById("login");
 
-
-if (previewContentElement) {
-    SemuaBeritaBeranda();
+if (getallElement) {
+    GetSemuaBeritaBeranda();
 } else {
-    console.log("Element with ID 'preview-content' not found. SemuaBeritaBerita not executed.");
+    console.log("Element with ID 'semua-berita' not found. GetSemuaBeritaBeranda not executed.");
 }
 
-
-if (fullberitaElement) {
-    SemuaBeritaSingleBlog();
+if (getsatuberita) {
+    PostSatuBerita();
 } else {
-    console.log("Element with ID 'full-berita' not found. SemuaBeritaSingleBlog not executed.");
+    console.log("Element with ID 'satu-berita' not found. PostSatuBerita not executed.");
 }
 
 if (komentarberitaElement) {
-    SemuaKomentarSingleBlog();
+    GetSemuaKomentarBlog();
 } else {
-    console.log("Element with ID 'komentar-berita' not found. SemuaKomentarSingleBlog not executed.");
+    console.log("Element with ID 'komentar-berita' not found. GetSemuaKomentarBlog not executed.");
 }
 
 if (auth) {
