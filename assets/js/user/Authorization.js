@@ -136,6 +136,5 @@ function handleAuthorizationError(message) {
     console.error('Error:', message);
     alert(message);
     deleteCookie();
-    sessionStorage.clear();
     window.location.href = "../../login";
 }
