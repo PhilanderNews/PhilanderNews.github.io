@@ -1,11 +1,10 @@
-import LoginUser from "./postLoginUser.js";
-import RegistrasiUser from "./postRegistrasiUser.js";
-import Logout from "./postLogout.js";
-import getSemuaBerita from "./getSemuaBerita.js"
-import { APIAmbilDataBerita } from "./rahasia.js"
-import Authorization from "./auth.js";
+import Login from "./user/Login.js";
+import RegistrasiUser from "./user/RegistrasiUser.js";
+import Logout from "./dll/postLogout.js";
+import SemuaBeritaBeranda from "./berita/SemuaBeritaBeranda.js"
+import Authorization from "./user/Authorization.js";
 
-window.LoginUser = LoginUser;
+window.Login = Login;
 window.RegistrasiUser = RegistrasiUser;
 window.Logout = Logout;
 
@@ -13,7 +12,7 @@ window.Logout = Logout;
 const previewContentElement = document.getElementById('preview-content');
 const auth = document.getElementById('need-authorization');
 if (previewContentElement) {
-    getSemuaBerita();
+    SemuaBeritaBeranda();
 } else {
     console.log("Element with ID 'preview-content' not found. getSemuaBerita not executed.");
 }
@@ -22,4 +21,22 @@ if (auth) {
     Authorization();
 } else {
     console.log("Element with ID 'need-authorization' not found. authUser not executed.");
+}
+
+// Cek apakah cookie ada
+if (!document.cookie.includes("token")) {
+    // Jika tidak ada, sembunyikan div dengan ID tertentu
+    var divToHide = document.getElementById("logout");
+    if (divToHide) {
+      divToHide.style.display = "none";
+    } else {
+        console.log("Element with ID 'logout' not found.");
+    }
+} else {
+    var divToHide = document.getElementById("login");
+    if (divToHide) {
+      divToHide.style.display = "none";
+    } else {
+        console.log("Element with ID 'login' not found.");
+    }
 }
