@@ -32,6 +32,12 @@ if (!document.cookie.includes("token")) {
     } else {
         console.log("Element with ID 'logout' not found.");
     }
+    var divToHide2 = document.getElementById("cms");
+    if (divToHide2) {
+      divToHide2.style.display = "none";
+    } else {
+        console.log("Element with ID 'logout' not found.");
+    }
 } else {
     var divToHide = document.getElementById("login");
     if (divToHide) {
