@@ -4,6 +4,7 @@ export let APILogin = "https://asia-southeast2-befous.cloudfunctions.net/Philand
 export let APIAuthorization = "https://asia-southeast2-befous.cloudfunctions.net/PhilanderNews-Authorization";
 // berita
 export let APIAmbilDataBerita = "https://asia-southeast2-befous.cloudfunctions.net/PhilanderNews-AmbilSemuaBerita";
+export let APIAmbilSatuBerita = "https://asia-southeast2-befous.cloudfunctions.net/PhilanderNews-AmbilSatuBerita";
 export let APITambahBerita = "https://asia-southeast2-befous.cloudfunctions.net/PhilanderNews-TambahBerita";
 // komentar
 export let APIAmbilDataKomentar = "https://asia-southeast2-befous.cloudfunctions.net/PhilanderNews-AmbilSemuaKomentar";
