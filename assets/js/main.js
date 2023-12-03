@@ -2,6 +2,7 @@ import Login from "./user/Login.js";
 import RegistrasiUser from "./user/RegistrasiUser.js";
 import Logout from "./dll/postLogout.js";
 import SemuaBeritaBeranda from "./berita/SemuaBeritaBeranda.js"
+import SemuaBeritaSingleBlog from "./berita/SemuaBeritaSingleBlog.js";
 import Authorization from "./user/Authorization.js";
 
 window.Login = Login;
@@ -15,6 +16,13 @@ if (previewContentElement) {
     SemuaBeritaBeranda();
 } else {
     console.log("Element with ID 'preview-content' not found. getSemuaBerita not executed.");
+}
+
+const fullberitaElement = document.getElementById('full-berita');
+if (fullberitaElement) {
+    SemuaBeritaSingleBlog();
+} else {
+    console.log("Element with ID 'full-berita' not found. SemuaBeritaSingleBloga not executed.");
 }
 
 if (auth) {
