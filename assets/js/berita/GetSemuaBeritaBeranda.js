@@ -1,11 +1,11 @@
-import { get } from "../dll/api.js";
+import { getBiasa } from "../dll/api.js";
 import { APIAmbilDataBerita } from "../dll/rahasia.js"
 
 const loadingIndicator = document.getElementById("loadingIndicator");
 
 export default function GetSemuaBeritaBeranda(){
     loadingIndicator.style.display = "block";
-    get(APIAmbilDataBerita,responseData);
+    getBiasa(APIAmbilDataBerita,responseData);
 }
 
 function responseData(result) {

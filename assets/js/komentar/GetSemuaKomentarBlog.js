@@ -1,11 +1,11 @@
-import { get } from "../dll/api.js";
+import { getBiasa } from "../dll/api.js";
 import { APIAmbilDataKomentar } from "../dll/rahasia.js"
 
 const loadingIndicator = document.getElementById("loadingIndicator");
 
 export default function GetSemuaKomentarBlog(){
     loadingIndicator.style.display = "block";
-    get(APIAmbilDataKomentar,responseData);
+    getBiasa(APIAmbilDataKomentar,responseData);
 }
 
 function responseData(result) {

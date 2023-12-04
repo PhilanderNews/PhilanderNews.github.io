@@ -77,7 +77,6 @@ import { APIAuthorization } from "../dll/rahasia.js"
 
 const adminAuthorizationElement = document.getElementById('admin-authorization');
 const authorAuthorizationElement = document.getElementById('author-authorization');
-const userAuthorizationElement = document.getElementById('user-authorization');
 
 export default function Authorization() {
     const myHeaders = new Headers();
