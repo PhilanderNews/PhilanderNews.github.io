@@ -26,6 +26,8 @@ function responseData(result) {
             <td>${data.email}</td>
             <td>${data.no_whatsapp}</td>
             <td>${data.role}</td>
+            <td><a class="btn btn-primary btn-user btn-block" href="UpdateUser.html?name=${data.name}&email=${data.email}&no_whatsapp=${data.no_whatsapp}&username=${data.username}&role=${data.role}">Update</a></td>
+            <td><a class="btn btn-danger btn-user btn-block" href="DeleteUser.html?username=${data.username}">Delete</a></td>
         `;
         // Append the post div to the post container
         postContainer.appendChild(postDiv);

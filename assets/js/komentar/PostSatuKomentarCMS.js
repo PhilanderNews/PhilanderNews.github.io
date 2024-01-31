@@ -20,7 +20,6 @@ function responseData(result) {
 
     // Set the HTML content for the post
     postDiv.innerHTML = `
-    <td>${data.id}</td>
     <td>${data.id_berita}</td>
     <td>${data.name}</td>
     <td>${data.tanggal}</td>

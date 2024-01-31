@@ -21,11 +21,10 @@ function responseData(result) {
     // Set the HTML content for the post
     postDiv.innerHTML = `
     <td>${data.id}</td>
-    <td>${data.kategori}</td>
     <td>${data.judul}</td>
+    <td>${data.kategori}</td>
     <td>${data.waktu}</td>
     <td>${data.penulis}</td>
-    <td>${data.judul}</td>
     `;
     // Append the post div to the post container
     postContainer.appendChild(postDiv);

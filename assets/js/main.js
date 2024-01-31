@@ -116,3 +116,101 @@ if (!document.cookie.includes("token")) {
         console.log("Element with ID 'login' not found.");
     }
 }
+
+const updateBeritaElement = document.getElementById('update-berita');
+if (updateBeritaElement) {
+    // value params
+    const searchParams = new URLSearchParams(window.location.search);
+    const id = searchParams.get("id");
+    const kategori = searchParams.get("kategori");
+    const judul = searchParams.get("judul");
+    const preview = searchParams.get("preview");
+    const paragraf1 = searchParams.get("paragraf1");
+    const paragraf2 = searchParams.get("paragraf2");
+    const paragraf3 = searchParams.get("paragraf3");
+    const paragraf4 = searchParams.get("paragraf4");
+    const paragraf5 = searchParams.get("paragraf5");
+    const paragraf6 = searchParams.get("paragraf6");
+    const paragraf7 = searchParams.get("paragraf7");
+    const paragraf8 = searchParams.get("paragraf8");
+    const paragraf9 = searchParams.get("paragraf9");
+    const paragraf10 = searchParams.get("paragraf10");
+    const sumber = searchParams.get("sumber");
+    const image = searchParams.get("image");
+
+    // change value form
+    document.getElementById("id-berita").value = id;
+    document.getElementById("kategori").value = kategori;
+    document.getElementById("judul").value = judul;
+    document.getElementById("preview").value = preview;
+    document.getElementById("paragraf1").value = paragraf1;
+    document.getElementById("paragraf2").value = paragraf2;
+    document.getElementById("paragraf3").value = paragraf3;
+    document.getElementById("paragraf4").value = paragraf4;
+    document.getElementById("paragraf5").value = paragraf5;
+    document.getElementById("paragraf6").value = paragraf6;
+    document.getElementById("paragraf7").value = paragraf7;
+    document.getElementById("paragraf8").value = paragraf8;
+    document.getElementById("paragraf9").value = paragraf9;
+    document.getElementById("paragraf10").value = paragraf10;
+    document.getElementById("sumber").value = sumber;
+    document.getElementById("image").value = image;
+} else {
+    console.log("Element with ID 'update-berita' not found.");
+}
+
+const deleteBeritaElement = document.getElementById('delete-berita');
+if (deleteBeritaElement) {
+    // value params
+    const searchParams = new URLSearchParams(window.location.search);
+    const id = searchParams.get("id");
+
+    // change value form
+    document.getElementById("id-berita").value = id;
+} else {
+    console.log("Element with ID 'delete-berita' not found.");
+}
+
+const deleteKomentarElement = document.getElementById('delete-komentar');
+if (deleteKomentarElement) {
+    // value params
+    const searchParams = new URLSearchParams(window.location.search);
+    const id = searchParams.get("id");
+
+    // change value form
+    document.getElementById("id-komentar").value = id;
+} else {
+    console.log("Element with ID 'delete-komentar' not found.");
+}
+
+const updateUserElement = document.getElementById('update-user');
+if (updateUserElement) {
+    // value params
+    const searchParams = new URLSearchParams(window.location.search);
+    const name = searchParams.get("name");
+    const email = searchParams.get("email");
+    const no_whatsapp = searchParams.get("no_whatsapp");
+    const username = searchParams.get("username");
+    const role = searchParams.get("role");
+
+    // change value form
+    document.getElementById("name").value = name;
+    document.getElementById("email").value = email;
+    document.getElementById("no_whatsapp").value = no_whatsapp;
+    document.getElementById("username").value = username;
+    document.getElementById("role").value = role;
+} else {
+    console.log("Element with ID 'update-user' not found.");
+}
+
+const deleteUserElement = document.getElementById('delete-user');
+if (deleteUserElement) {
+    // value params
+    const searchParams = new URLSearchParams(window.location.search);
+    const username = searchParams.get("username");
+
+    // change value form
+    document.getElementById("username").value = username;
+} else {
+    console.log("Element with ID 'delete-user' not found.");
+}
