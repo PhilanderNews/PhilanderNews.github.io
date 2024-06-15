@@ -14,8 +14,8 @@ export default function TambahKomentar(){
     
     let komentar = getValue("komentar");
 
-    let tokencookie = getCookie("token")
-    let tokenkey = "token"
+    let tokencookie = getCookie("Authorization")
+    let tokenkey = "Authorization"
     let tokenvalue = tokencookie;
 
     let datainjson = {

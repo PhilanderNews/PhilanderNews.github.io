@@ -6,8 +6,8 @@ import { APIHapusBerita } from "../dll/rahasia.js"
 export default function HapusBerita(){   
     let id = getValue("id-berita");
 
-    let tokencookie = getCookie("token")
-    let tokenkey = "token"
+    let tokencookie = getCookie("Authorization")
+    let tokenkey = "Authorization"
     let tokenvalue = tokencookie;
 
     let datainjson = {

@@ -29,7 +29,7 @@ export default function Login(){
 function responseData(result) {
     loadingIndicator.style.display = "none";
     if (result.status == true) {
-        setCookieWithExpireHour("token", result.token, 2);
+        setCookieWithExpireHour("Authorization", result.token, 2);
         window.location.href = "../"; 
         
     } else {

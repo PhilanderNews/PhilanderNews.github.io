@@ -3,8 +3,8 @@ import { getCookie } from "../dll/cookie.js";
 import { APIAmbilDataUser } from "../dll/rahasia.js"
 
 export default function GetSemuaUserCMS(){
-    let tokencookie = getCookie("token")
-    let tokenkey = "token"
+    let tokencookie = getCookie("Authorization")
+    let tokenkey = "Authorization"
     let tokenvalue = tokencookie;
 
     getHeader(APIAmbilDataUser,tokenkey,tokenvalue,responseData);

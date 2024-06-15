@@ -6,8 +6,8 @@ import { APIHapusKomentar } from "../dll/rahasia.js"
 export default function HapusKomentar(){   
     let id = getValue("id-komentar");
 
-    let tokencookie = getCookie("token")
-    let tokenkey = "token"
+    let tokencookie = getCookie("Authorization")
+    let tokenkey = "Authorization"
     let tokenvalue = tokencookie;
 
     let datainjson = {

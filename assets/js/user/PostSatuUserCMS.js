@@ -4,8 +4,8 @@ import { getValue } from "../dll/element.js";
 import { getCookie } from "../dll/cookie.js";
 
 export default function PostSatuUserCMS(){
-    let tokencookie = getCookie("token")
-    let tokenkey = "token"
+    let tokencookie = getCookie("Authorization")
+    let tokenkey = "Authorization"
     let tokenvalue = tokencookie;
 
     let username = getValue("username");

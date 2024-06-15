@@ -6,8 +6,8 @@ import { APIHapusUser } from "../dll/rahasia.js"
 export default function HapusUser(){   
     let username = getValue("username");
 
-    let tokencookie = getCookie("token")
-    let tokenkey = "token"
+    let tokencookie = getCookie("Authorization")
+    let tokenkey = "Authorization"
     let tokenvalue = tokencookie;
 
     let datainjson = {

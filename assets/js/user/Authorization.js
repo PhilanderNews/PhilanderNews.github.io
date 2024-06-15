@@ -80,8 +80,8 @@ const authorAuthorizationElement = document.getElementById('author-authorization
 
 export default function Authorization() {
     const myHeaders = new Headers();
-    let tokencookie = getCookie("token");
-    myHeaders.append("token", tokencookie);
+    let tokencookie = getCookie("Authorization");
+    myHeaders.append("Authorization", tokencookie);
 
     var requestOptions = {
         method: 'GET',

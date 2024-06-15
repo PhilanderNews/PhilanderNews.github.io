@@ -97,7 +97,7 @@ if (auth) {
 }
 
 // Cek apakah cookie ada
-if (!document.cookie.includes("token")) {
+if (!document.cookie.includes("Authorization")) {
     // Jika tidak ada, sembunyikan div dengan ID tertentu
     if (divlogout) {
         divlogout.style.display = "none";

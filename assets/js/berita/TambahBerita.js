@@ -23,8 +23,8 @@ export default function TambahBerita(){
     let sumber = getValue("sumber");
     let image = getValue("image");
 
-    let tokencookie = getCookie("token")
-    let tokenkey = "token"
+    let tokencookie = getCookie("Authorization")
+    let tokenkey = "Authorization"
     let tokenvalue = tokencookie;
 
     let datainjson = {

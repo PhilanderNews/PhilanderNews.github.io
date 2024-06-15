@@ -21,8 +21,8 @@ export default function UpdateBerita(){
     let sumber = getValue("sumber");
     let image = getValue("image");
 
-    let tokencookie = getCookie("token")
-    let tokenkey = "token"
+    let tokencookie = getCookie("Authorization")
+    let tokenkey = "Authorization"
     let tokenvalue = tokencookie;
 
     let datainjson = {
