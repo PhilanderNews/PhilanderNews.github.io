@@ -188,15 +188,15 @@ if (updateUserElement) {
     // value params
     const searchParams = new URLSearchParams(window.location.search);
     const name = searchParams.get("name");
-    const email = searchParams.get("email");
-    const no_whatsapp = searchParams.get("no_whatsapp");
+    // const email = searchParams.get("email");
+    // const no_whatsapp = searchParams.get("no_whatsapp");
     const username = searchParams.get("username");
     const role = searchParams.get("role");
 
     // change value form
     document.getElementById("name").value = name;
-    document.getElementById("email").value = email;
-    document.getElementById("no_whatsapp").value = no_whatsapp;
+    // document.getElementById("email").value = email;
+    // document.getElementById("no_whatsapp").value = no_whatsapp;
     document.getElementById("username").value = username;
     document.getElementById("role").value = role;
 } else {

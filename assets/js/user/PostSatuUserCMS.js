@@ -27,10 +27,10 @@ function responseData(result) {
     postDiv.innerHTML = `
     <td>${data.username}</td>
     <td>${data.name}</td>
-    <td>${data.email}</td>
-    <td>${data.no_whatsapp}</td>
     <td>${data.role}</td>
     `;
     // Append the post div to the post container
+    // <td>${data.email}</td>
+    // <td>${data.no_whatsapp}</td>
     postContainer.appendChild(postDiv);
 }
