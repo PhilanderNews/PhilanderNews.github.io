@@ -28,7 +28,7 @@ function responseData(result) {
                 <img alt="" src="../assets/images/user.jpg" class=" is-pulled-left mr-3 mt-2" height="100" width="100">
 
                 <div class="ml-4">
-                    <h4 class="mb-0">${data.name} </h4>
+                    <h4 class="mb-0">${data.username} </h4>
                     <span class="date-comm font-sm is-capitalize text-color"><i class="ti-time mr-2"></i>${data.tanggal} </span>
 
                     <div class="comment-content mt-4">
