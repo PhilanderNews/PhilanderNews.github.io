@@ -214,3 +214,42 @@ if (deleteUserElement) {
 } else {
     console.log("Element with ID 'delete-user' not found.");
 }
+
+const loginElement = document.getElementById('loginnn');
+if (loginElement) {
+    document.addEventListener("DOMContentLoaded", function() {
+        const loginForm = document.getElementById('loginForm');
+        const usernameInput = document.getElementById('username');
+        const passwordInput = document.getElementById('password');
+        const rememberMeCheckbox = document.getElementById('rememberMe');
+    
+        // Load saved username if available
+        if (localStorage.getItem('rememberMe') === 'true') {
+            usernameInput.value = localStorage.getItem('username');
+            passwordInput.value = localStorage.getItem('password');
+            rememberMeCheckbox.checked = true;
+        }
+    
+        loginForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+    
+            const username = usernameInput.value;
+            const password = passwordInput.value;
+            const rememberMe = rememberMeCheckbox.checked;
+    
+            if (rememberMe) {
+                // Save username and rememberMe status to LocalStorage
+                localStorage.setItem('username', username);
+                localStorage.setItem('password', password);
+                localStorage.setItem('rememberMe', true);
+            } else {
+                // Clear saved username and rememberMe status
+                localStorage.removeItem('username');
+                localStorage.removeItem('password');
+                localStorage.setItem('rememberMe', false);
+            }
+        });
+    });
+} else {
+    console.log("Element with ID 'loginnn' not found.");
+}
