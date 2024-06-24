@@ -17,7 +17,7 @@ function responseData(result) {
         // Set the HTML content for the post
         postDiv.innerHTML = `
             <td>${data.id_berita}</td>
-            <td>${data.name}</td>
+            <td>${data.username}</td>
             <td>${data.tanggal}</td>
             <td><a class="btn btn-danger btn-user btn-block" href="DeleteKomentar.html?id=${data.id}">Delete</a></td>
         `;

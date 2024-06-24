@@ -23,10 +23,9 @@ function responseData(result) {
         postDiv.innerHTML = `
             <td>${data.username}</td>
             <td>${data.name}</td>
-            // <td>${data.email}</td>
-            // <td>${data.no_whatsapp}</td>
+            <td>${data.nowa}</td>
             <td>${data.role}</td>
-            <td><a class="btn btn-primary btn-user btn-block" href="UpdateUser.html?name=${data.name}&username=${data.username}&role=${data.role}">Update</a></td>
+            <td><a class="btn btn-primary btn-user btn-block" href="UpdateUser.html?name=${data.name}&no_whatsapp=${data.nowa}&username=${data.username}&role=${data.role}">Update</a></td>
             <td><a class="btn btn-danger btn-user btn-block" href="DeleteUser.html?username=${data.username}">Delete</a></td>
         `;
         // Append the post div to the post container

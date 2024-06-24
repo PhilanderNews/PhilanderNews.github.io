@@ -9,15 +9,13 @@ export default function UpdateUser(){
     let tokenvalue = tokencookie;
 
     let name = getValue("name");
-    // let email = getValue("email");
-    // let no_whatsapp = getValue("no_whatsapp");
+    let no_whatsapp = getValue("no_whatsapp");
     let username = getValue("username");
     let password = getValue("password");
     let role = getValue("role");
     let datainjson = {
         "name": name,
-        // "email": email,
-        // "no_whatsapp": no_whatsapp,
+        "nowa": no_whatsapp,
         "username": username,
         "password": password,
         "role": role

@@ -163,16 +163,11 @@
                                             id="name"
                                             placeholder="Nama user...">
                                     </div>
-                                    <!-- <div class="form-group">
-                                        <label style="text-align:center;display: block;">Email</label>
-                                        <input type="email" class="form-control form-control-user"
-                                            id="email" placeholder="Email user...">
-                                    </div>
                                     <div class="form-group">
                                         <label style="text-align:center;display: block;">Nomor Whatsapp</label>
                                         <input type="text" class="form-control form-control-user"
                                             id="no_whatsapp" placeholder="No whatsapp user...">
-                                    </div> -->
+                                    </div>
                                     <div class="form-group">
                                         <label style="text-align:center;display: block;">Username</label>
                                         <input type="text" class="form-control form-control-user"
@@ -188,10 +183,16 @@
                                         <input type="text" class="form-control form-control-user"
                                             id="role" placeholder="user/author/admin">
                                     </div>
+                                    <div class="form-group">
+                                        <label style="text-align:center;display: block;">Kode</label>
+                                        <input type="text" class="form-control form-control-user"
+                                            id="kode" placeholder="Kode Verifikasi dikirim melalui whatsapp">
+                                    </div>
 
                                     <div class="form-group">
                                     </div>
                                     <button class="btn btn-primary btn-user btn-block" onclick="TambahUser()">Submit</button>
+                                    <button class="btn btn-primary btn-user btn-block" onclick="GenerateKodeVerifikasi()">Kirim Kode Verifikasi</button>
                                     <hr>
                                 </form>
                             </div>

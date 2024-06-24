@@ -17,3 +17,5 @@ export let APIAmbilDataKomentar = "https://asia-southeast2-befous.cloudfunctions
 export let APITambahKomentar = "https://asia-southeast2-befous.cloudfunctions.net/PhilanderNews/TambahKomentar";
 export let APIHapusKomentar = "https://asia-southeast2-befous.cloudfunctions.net/PhilanderNews/HapusKomentar";
 export let APIAmbilSatuKomentar = "https://asia-southeast2-befous.cloudfunctions.net/PhilanderNews/AmbilSatuKomentar";
+// verifikasi
+export let APIGenerateVerifikasi = "https://asia-southeast2-befous.cloudfunctions.net/PhilanderNews/GenerateVerifikasi";

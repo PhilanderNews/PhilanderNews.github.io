@@ -6,14 +6,10 @@ const loadingIndicator = document.getElementById("loadingIndicator");
 
 export default function RegistrasiUser(){
     let name = getValue("name");
-    // let email = getValue("email");
-    // let no_whatsapp = getValue("no_whatsapp");
+    let no_whatsapp = getValue("no_whatsapp");
     let username = getValue("username");
     let password = getValue("password");
-    // if (email && !(email.endsWith("@gmail.com") || email.endsWith("@std.ulbi.ac.id") || email.endsWith("@ulbi.ac.id"))) {
-    //     alert("Format email tidak benar");
-    //     return; // Stop execution if the email format is not valid
-    // }
+    let kode = getValue("kode");
     if (!username) {
         alert("Username perlu diisi");
         return; // Stop execution if the fields are not filled
@@ -24,11 +20,11 @@ export default function RegistrasiUser(){
     }
     let datainjson = {
         "name": name,
-        // "email": email,
-        // "no_whatsapp": no_whatsapp,
+        "nowa": no_whatsapp,
         "username": username,
         "password": password,
-        "role": "user"
+        "role": "user",
+        "kode": kode
     }
     loadingIndicator.style.display = "block";
     

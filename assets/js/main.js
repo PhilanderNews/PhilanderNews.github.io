@@ -23,6 +23,8 @@ import TambahKomentar from "./komentar/TambahKomentar.js";
 import HapusKomentar from "./komentar/DeleteSatuKomentar.js";
 import GetSemuaKomentarCMS from "./komentar/GetSemuaKomentarCMS.js";
 import PostSatuKomentarCMS from "./komentar/PostSatuKomentarCMS.js";
+// Verifikasi
+import GenerateKodeVerifikasi from "./verifikasi/verifikasi.js";
 
 // Tools
 window.Logout = Logout;
@@ -42,6 +44,8 @@ window.PostSatuBeritaCMS = PostSatuBeritaCMS;
 window.HapusKomentar = HapusKomentar;
 window.TambahKomentar = TambahKomentar;
 window.PostSatuKomentarCMS = PostSatuKomentarCMS;
+// Verifikasi
+window.GenerateKodeVerifikasi = GenerateKodeVerifikasi;
 
 const getallBeritaElement = document.getElementById('semua-berita');
 const getallBeritaCMSElement = document.getElementById('semua-berita-cms');
@@ -188,15 +192,13 @@ if (updateUserElement) {
     // value params
     const searchParams = new URLSearchParams(window.location.search);
     const name = searchParams.get("name");
-    // const email = searchParams.get("email");
-    // const no_whatsapp = searchParams.get("no_whatsapp");
+    const no_whatsapp = searchParams.get("no_whatsapp");
     const username = searchParams.get("username");
     const role = searchParams.get("role");
 
     // change value form
     document.getElementById("name").value = name;
-    // document.getElementById("email").value = email;
-    // document.getElementById("no_whatsapp").value = no_whatsapp;
+    document.getElementById("no_whatsapp").value = no_whatsapp;
     document.getElementById("username").value = username;
     document.getElementById("role").value = role;
 } else {
