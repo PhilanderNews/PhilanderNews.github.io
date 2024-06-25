@@ -31,9 +31,9 @@ export default function TambahKomentar(){
 function responseData(result) {
     loadingIndicator.style.display = "none";
     if (result.status == true) {
-        alert("Komentar anda telah masuk");
+        alert(result.message);
         window.location.reload();
     } else {
-        alert("Anda blom login dengan benar");
+        alert(result.message);
     }
 }

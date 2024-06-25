@@ -19,8 +19,8 @@ export default function HapusBerita(){
 
 function responseData(result) {
     if (result.status == true) {
-        alert("Berita anda terhapus");
+        alert(result.message);
     } else {
-        alert("Anda blom login dengan benar");
+        alert(result.message);
     }
 }

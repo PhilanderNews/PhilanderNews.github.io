@@ -26,8 +26,8 @@ export default function UpdateUser(){
 
 function responseData(result) {
     if (result.status == true) {
-        alert("User anda terupdate");
+        alert(result.message);
     } else {
-        alert("Anda blom login dengan benar");
+        alert(result.message);
     }
 }

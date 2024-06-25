@@ -19,8 +19,8 @@ export default function HapusKomentar(){
 
 function responseData(result) {
     if (result.status == true) {
-        alert("Komentar terhapus");
+        alert(result.message);
     } else {
-        alert("Anda blom login dengan benar");
+        alert(result.message);
     }
 }

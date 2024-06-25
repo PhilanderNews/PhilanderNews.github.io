@@ -23,6 +23,11 @@ export default function TambahBerita(){
     let sumber = getValue("sumber");
     let image = getValue("image");
 
+    if (preview.length > 300) {
+        alert("Preview hanya boleh maksimal 300 karakter");
+        return;
+    }
+
     let tokencookie = getCookie("Authorization")
     let tokenkey = "Authorization"
     let tokenvalue = tokencookie;
@@ -53,8 +58,8 @@ export default function TambahBerita(){
 
 function responseData(result) {
     if (result.status == true) {
-        alert("Berita anda telah masuk");
+        alert(result.message);
     } else {
-        alert("Anda blom login dengan benar");
+        alert(result.message);
     }
 }

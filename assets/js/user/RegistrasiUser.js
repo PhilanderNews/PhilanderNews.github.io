@@ -10,6 +10,29 @@ export default function RegistrasiUser(){
     let username = getValue("username");
     let password = getValue("password");
     let kode = getValue("kode");
+
+    // Validasi panjang karakter
+    if (name.length > 21) {
+        alert("Nama hanya boleh maksimal 21 karakter");
+        return;
+    }
+    if (no_whatsapp.length > 13) {
+        alert("Nomor WhatsApp hanya boleh maksimal 13 karakter");
+        return;
+    }
+    if (username.length > 12) {
+        alert("Username hanya boleh maksimal 12 karakter");
+        return;
+    }
+    if (password.length > 12) {
+        alert("Password hanya boleh maksimal 12 karakter");
+        return;
+    }
+    if (kode.length > 12) {
+        alert("Kode verifikasi hanya boleh maksimal 12 karakter");
+        return;
+    }
+
     if (!username) {
         alert("Username perlu diisi");
         return; // Stop execution if the fields are not filled
@@ -18,6 +41,7 @@ export default function RegistrasiUser(){
         alert("Password perlu diisi");
         return; // Stop execution if the fields are not filled
     }
+
     let datainjson = {
         "name": name,
         "nowa": no_whatsapp,
@@ -26,22 +50,18 @@ export default function RegistrasiUser(){
         "role": "user",
         "kode": kode
     }
+
     loadingIndicator.style.display = "block";
     
-    postBiasa(APIRegistrasi,datainjson,responseData);
+    postBiasa(APIRegistrasi, datainjson, responseData);
 }
 
 function responseData(result) {
     loadingIndicator.style.display = "none";
     if (result.status == true) {
-        alert("Berhasil registrasi");
+        alert(result.message);
         window.location.href = "../login";
     } else {
-        if (result.message == "username telah dipakai") {
-            alert("username telah dipakai");
-        }
-        if (result.message == "gagal Hash Password") {
-            alert("Gagal Hash Password");
-        }
+        alert(result.message);
     }
 }
